@@ -1,0 +1,44 @@
+<main>
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 justify-center flex">
+          <h1 class="text-3xl font-bold text-gray-900">
+            Product Generator
+          </h1>
+          <%= button_to "Back", root_path, class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-10", method: :get %>
+          <%= button_to "Try again", dashboard_path, class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-10", method: :get %>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        <!-- Replace with your content -->
+        <div class="">
+          <div class="bg-blue p-10 rounded-lg shadow ">
+            <div class="mb-5">
+              <ul class="w-full rounded-lg mt-2 mb-3 text-blue-800">
+              <label for="name" class="block font-bold text-gray-600">Name</label>
+               <li class="mb-1">
+                 <a href="#" class="w-fill flex p-3 pl-3 bg-gray-100 hover:bg-gray-200 rounded-lg">
+                   <div class="flex flex-col justify-center">
+                     <span class="text-sm font-medium text-gray-900">
+                       <%= @products.last.ori_name %>
+                     </span>
+                   </div>
+                 </a>
+                 <p class="italic ..."><%= @products.last.name%> ...{generate by AI)</p>
+               </li>
+               <label for="name" class="block font-bold text-gray-600">Description</label>
+               <li class="mb-1">
+                 <a href="#" class="w-fill flex p-3 pl-3 bg-gray-100 hover:bg-gray-200 rounded-lg">
+                   <div class="flex flex-col justify-center">
+                     <span class="text-sm font-medium text-gray-900">
+                       <%= @products.last.ori_description %>
+                     </span>
+                   </div>
+                 </a>
+                 <p class="italic ..."><%= @products.last.description%> ...{generate by AI)</p>
+               </li>
+              </ul>
+            </div>
+
+        </div>
+    </main>
+
+ 
